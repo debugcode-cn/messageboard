@@ -1,0 +1,260 @@
+@CHARSET "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+    box-sizing: border-box;
+	    
+}
+html, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ background: transparent;
+}
+html,body{
+	height:100%;
+	overflow:auto;
+	font-family:'楷体';
+}
+body {
+ line-height: 1;
+}
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: '';
+ content: none;
+}
+/* remember to define focus styles! */
+:focus {
+ outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+ text-decoration: none;
+}
+del {
+ text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+
+
+/* index */
+
+#indexTitle{
+	position:relative;
+	width:300px;
+	height:100px;
+	margin:0 auto;
+	margin-top:20px;
+	border-radius:5px;
+	background-color: lightblue;
+	box-shadow:0 0 0 2px #f3e2e2;
+	text-align:center;
+	line-height:100px;
+	color:white;
+	font-size:22px;
+}
+
+#indexTitle #menu{
+    width: 20px;
+    height: 20px;
+    
+    border: 1px solid #795548;
+    box-shadow: 0 0 5px gray;
+    border-radius: 3px;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    
+    background: #FF5722;
+    
+	transition:all 1.6s;
+	-ms-transition:all 1.6s;
+	-moz-transition:all 1.6s;
+	-webkit-transition:all 1.6s;
+	-o-transition:all 1.6s;
+	
+}
+
+#menu.showed{
+	bottom: 8px !important;
+    border-top-right-radius: 100% !important;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); 	/* IE 9 */
+	-moz-transform:rotate(45deg); 	/* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(45deg); 	/* Opera */
+	
+}
+.ops{
+	display:none;
+	background: red;
+    float: right;
+    position: absolute;
+    z-index:10;
+    width: 30%;
+    height: auto;
+    line-height: 50px;
+    right: 0;
+    text-align: center;
+}
+.ops > span{
+	display:block;
+}
+.panel{
+	display:none;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:100;
+	background-color:gray;
+	opacity: .7;
+}
+.panel #shadow{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:-1;
+	background-color:transparent;
+}
+.panel #addform{
+	box-shadow:0 0 10px lightgray;
+	border-radius:6px;
+	background-color:white;
+	width:400px;
+	height:400px;
+	margin:150px auto;
+	overflow:auto;
+}
+#addform input{
+	display:block;
+	margin:0px auto;
+	margin-top:40px;
+	margin-bottom:30px;
+	height:40px;
+	line-height:40px;
+	font-size:20px;
+	text-indent:2em;
+}
+#addform p{
+	margin:0 0 10px 30px;
+}
+#addform #context{
+	margin:0 10px;
+	height:200px;
+	word-break:break-all;
+	overflow:auto;
+	border:1px solid gray;
+	text-indent:2em;
+}
+#addform .submit{
+    width: 80px;
+    margin: 10px auto;
+    text-align: center;
+    height: 35px;
+    overflow: auto;
+    line-height: 35px;
+    background: #2196F3;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+#postslist{
+	width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 0 0 0 3px lightgray;
+    border-radius: 3px;
+    height: 600px;
+    overflow: auto;
+}
+#postslist li{
+    border: 1px solid #d94719;
+	height: auto;
+    margin-bottom: 10px;
+}
+#postslist li >div:first-child{
+    background: #d94719;
+    height: 40px;
+    line-height: 40px;
+}
+#postslist li > div:first-child .nickname{
+    padding: 0px 20px;
+    font-size: 30px;
+}
+#postslist li > div:first-child .time{
+	float: right;
+    margin-right: 30px;
+    color: white;
+}
+
+#postslist li >div:nth-child(2){
+    height: auto;
+    padding-top:10px;
+    min-height: 80px;
+    max-height: 90px;
+    text-indent: 2em;
+    line-height: 30px;
+    font-size: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+    word-wrap: break-word; 
+	word-break:normal;
+	
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
